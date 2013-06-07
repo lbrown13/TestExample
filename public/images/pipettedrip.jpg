@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="744.09448819" height="1052.3622047" id="svg3006" version="1.1" inkscape:version="0.47 r22583" sodipodi:docname="Pipette.svg">
+  <defs id="defs3008">
+    <inkscape:perspective sodipodi:type="inkscape:persp3d" inkscape:vp_x="0 : 526.18109 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="744.09448 : 526.18109 : 1" inkscape:persp3d-origin="372.04724 : 350.78739 : 1" id="perspective3014"/>
+    <inkscape:perspective id="perspective2994" inkscape:persp3d-origin="0.5 : 0.33333333 : 1" inkscape:vp_z="1 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_x="0 : 0.5 : 1" sodipodi:type="inkscape:persp3d"/>
+    <linearGradient inkscape:collect="always" xlink:href="#linearGradient6488" id="linearGradient3794" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,573.55109,-39.950449)" x1="300.28708" y1="626.95551" x2="371.5" y2="625.63843"/>
+    <linearGradient id="linearGradient6488">
+      <stop style="stop-color:#000000;stop-opacity:0.47058824;" offset="0" id="stop6490"/>
+      <stop id="stop6496" offset="0.5" style="stop-color:#000000;stop-opacity:0;"/>
+      <stop style="stop-color:#000000;stop-opacity:0.47058824;" offset="1" id="stop6492"/>
+    </linearGradient>
+    <inkscape:perspective id="perspective3821" inkscape:persp3d-origin="0.5 : 0.33333333 : 1" inkscape:vp_z="1 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_x="0 : 0.5 : 1" sodipodi:type="inkscape:persp3d"/>
+    <inkscape:perspective id="perspective3821-9" inkscape:persp3d-origin="0.5 : 0.33333333 : 1" inkscape:vp_z="1 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_x="0 : 0.5 : 1" sodipodi:type="inkscape:persp3d"/>
+    <inkscape:perspective id="perspective3821-8" inkscape:persp3d-origin="0.5 : 0.33333333 : 1" inkscape:vp_z="1 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_x="0 : 0.5 : 1" sodipodi:type="inkscape:persp3d"/>
+  </defs>
+  <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.5368874" inkscape:cx="345.03972" inkscape:cy="526.18109" inkscape:document-units="px" inkscape:current-layer="layer1" showgrid="false" inkscape:window-width="1440" inkscape:window-height="812" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="0"/>
+  <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1">
+    <g id="g3853" transform="translate(-98.71716,-232.82349)">
+      <g transform="matrix(1.57849,0,0,1.57849,-144.37929,-436.7973)" id="g3782">
+        <path style="fill:url(#linearGradient3794);fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" d="M 430.45942,527.40529 271.3604,686.50431 211.25632,789.0348 l 7.07107,7.07106 102.53048,-60.10407 159.09903,-159.09903" id="path6484" sodipodi:nodetypes="cccccc"/>
+        <path style="opacity:0.3;fill:#800000;stroke:none" d="m 332.897,627.36218 96.53417,0 -109.16112,107.153 -101.46694,59.61124 -6.25151,-5.28975 58.66808,-100.50516 61.67732,-60.96933 z" id="path2994" sodipodi:nodetypes="ccccccc"/>
+      </g>
+      <path transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,390.8806,256.16193)" sodipodi:open="true" sodipodi:end="4.5311822" sodipodi:start="1.198188" d="m 278.05724,363.4057 c -29.70085,4.86833 -63.18917,-1.28205 -74.79825,-13.73724 -11.60908,-12.4552 3.0572,-26.49869 32.75805,-31.36701 3.4337,-0.56282 6.98804,-0.98645 10.61435,-1.26507" sodipodi:ry="24.213644" sodipodi:rx="57.740227" sodipodi:cy="340.85358" sodipodi:cx="257.03714" id="path3039" style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" sodipodi:type="arc"/>
+      <path transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,456.34148,190.70105)" sodipodi:open="true" sodipodi:end="4.5311822" sodipodi:start="1.198188" d="m 278.05724,363.4057 c -29.70085,4.86833 -63.18917,-1.28205 -74.79825,-13.73724 -11.60908,-12.4552 3.0572,-26.49869 32.75805,-31.36701 3.4337,-0.56282 6.98804,-0.98645 10.61435,-1.26507" sodipodi:ry="24.213644" sodipodi:rx="57.740227" sodipodi:cy="340.85358" sodipodi:cx="257.03714" id="path3039-7" style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" sodipodi:type="arc"/>
+      <path transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,521.80242,125.24012)" sodipodi:open="true" sodipodi:end="4.5311822" sodipodi:start="1.198188" d="m 278.05724,363.4057 c -29.70085,4.86833 -63.18917,-1.28205 -74.79825,-13.73724 -11.60908,-12.4552 3.0572,-26.49869 32.75805,-31.36701 3.4337,-0.56282 6.98804,-0.98645 10.61435,-1.26507" sodipodi:ry="24.213644" sodipodi:rx="57.740227" sodipodi:cy="340.85358" sodipodi:cx="257.03714" id="path3039-3" style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" sodipodi:type="arc"/>
+      <path transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,587.26329,59.779248)" sodipodi:open="true" sodipodi:end="4.5311822" sodipodi:start="1.198188" d="m 278.05724,363.4057 c -29.70085,4.86833 -63.18917,-1.28205 -74.79825,-13.73724 -11.60908,-12.4552 3.0572,-26.49869 32.75805,-31.36701 3.4337,-0.56282 6.98804,-0.98645 10.61435,-1.26507" sodipodi:ry="24.213644" sodipodi:rx="57.740227" sodipodi:cy="340.85358" sodipodi:cx="257.03714" id="path3039-0" style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" sodipodi:type="arc"/>
+    </g>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Open Clip Art Library</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Pipette with Medium</dc:title>
+        <dc:date>2010-04-21T02:09:04</dc:date>
+        <dc:description>A pipette filled with medium.</dc:description>
+        <dc:source>http://openclipart.org/detail/49351/pipette-with-medium-by-mihi</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>mihi</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>Biology</rdf:li>
+            <rdf:li>Cell Culture</rdf:li>
+            <rdf:li>Medium</rdf:li>
+            <rdf:li>Pipette</rdf:li>
+            <rdf:li>Science</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
