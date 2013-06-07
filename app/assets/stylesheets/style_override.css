@@ -167,7 +167,7 @@ img.innerbg {
 }
 
 .feature-box {
-  background-color: #ecf0f5;
+  background-color: #cdd2d9;
   border-radius: 6px;
   padding: 14px;
  position: relative;
@@ -581,18 +581,18 @@ border-top: 14px solid #3f95e1;
   background-image: url(../../assets/img/paper.png);
 }
 
-.why-box {
+/*.why-box {
   padding: 10px;
 }
-
+*/
 .about-us h2{
   color: #2b3e50;
 }
-/*group:after {
+group:after {
     content: "";
     display: table;
     clear: both;
-}*/
+}
 
 /***************************** SOCIAL BUTTONS ******************************/
 ul.social-top {
@@ -697,7 +697,7 @@ ul.social-top li a {
 border-top:4px solid #2fe2bf;
 }
 
-@media (max-width: 979px) {
+/*@media (max-width: 979px) {
   .camein p {
   width: 60%;
-}
+}*/
