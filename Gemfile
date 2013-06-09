@@ -13,7 +13,6 @@ group :prouduction do
   gem 'pg'
 end
 
-gem 'simple_form'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -30,8 +29,26 @@ group :assets do
   gem 'bootstrap-sass'
 end
 
+gem 'devise'
 gem 'jquery-rails'
 gem 'bootstrap-modal-rails'
+
+gem "database_cleaner", :group => :test
+gem "email_spec", :group => :test
+gem "cucumber-rails", :group => :test, :require => false
+gem "launchy", :group => :test
+gem "capybara", :group => :test
+gem "factory_girl_rails", :group => [:development, :test]
+gem "rspec-rails", :group => [:development, :test]
+gem "cancan"
+gem "rolify"
+gem "simple_form"
+gem "quiet_assets", :group => :development
+gem "figaro"
+gem "better_errors", :group => :development
+gem "binding_of_caller"
+# , :group => :development, :platforms => [:mri_19, :rbx]
+gem 'gibbon'
 # gem 'starter_generators'
 
 # To use ActiveModel has_secure_password

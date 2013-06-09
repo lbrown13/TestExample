@@ -15,3 +15,26 @@
 //= require bootstrap
 //= require bootstrap-modal
 //= require_tree .
+$('document').ready(function() {
+
+  // display validation errors for the "request invitation" form
+  if ($('.alert-error').length > 0) {
+    $("#request-invite").modal('toggle');
+  }
+
+  // use Ajax to submit the "request invitation" form
+  $('#invitation_button').on('click', function() {
+    var email = $('form #user_email').val();
+    var dataString = 'user[email]='+ email;
+    $.ajax({
+      type: "POST",
+      url: "/users",
+      data: dataString,
+      success: function(data) {
+        $('#request-invite').html(data);
+      }
+    });
+    return false;
+  });
+
+})

@@ -160,6 +160,10 @@ img.innerbg {
   margin-top: 70px;
 }
 
+.sky-background {
+background-color: #dfeff8;
+}
+
 .feature-box ul li{
   list-style: square;
   text-align: left;
@@ -448,6 +452,19 @@ textarea::-webkit-input-placeholder {
 /*====================   TOMS CSS   ================
 ======================              ================
 */
+
+#aboutus{
+  margin-top: 30px;
+}
+
+.neutral {
+  background-image: url(paper.png);
+}
+
+.whywedoit {
+  background-image: url(images/paper.png);
+  /*background-image: url(../../assets/img/arches.png);*/
+}
 h1 {
   color: #898989;
 }
@@ -509,6 +526,7 @@ h1 {
   font-size: 20px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
 
 .why-img {
   height: 154px;
@@ -597,10 +615,9 @@ group:after {
 /***************************** SOCIAL BUTTONS ******************************/
 ul.social-top {
   display: inline-block;
-  margin-top: 0px;
-  margin-left: 1px;
+/*margin: auto;
   padding: 0px;
-  padding-left: 0px;
+  padding-left: 0px;*/
 
 }
 
@@ -608,8 +625,8 @@ ul.social-top li a {
   color: #354960;
   text-decoration: none;
   display: inline-block;
-  width: 100%;
-  height: 100%;
+ /* width: 100%;
+  height: 100%;*/
 }
 
 ul.social-top li {
@@ -697,7 +714,12 @@ ul.social-top li a {
 border-top:4px solid #2fe2bf;
 }
 
-/*@media (max-width: 979px) {
+@media (max-width: 979px) {
   .camein p {
   width: 60%;
-}*/
+}
+}
+@media (min-width: 1214px) {
+  img.span4.pull-left{
+  margin-bottom: 60px;}
+}
