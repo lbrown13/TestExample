@@ -40,7 +40,7 @@ config.action_mailer.smtp_settings = {
   :user_name => ENV["MANDRILL_USERNAME"],
   :password  => ENV["MANDRILL_API_KEY"]
 }
-}
+
 
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
