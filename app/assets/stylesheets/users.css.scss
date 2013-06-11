@@ -2,18 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-#header-section .innerbg {
-  background-image: url(beakers2.jpg);
-  min-height:650px;
-  width:100%;
-  display:inline-block;
-  margin:0px;
-  padding:0px;
-          background-size: cover;
-     -moz-background-size: cover;
-       -o-background-size: cover;
-  -webkit-background-size: cover;
-  position:relative;
-  padding-bottom:50px;
+.content {
+background-color: rgba(224, 224, 224, 0.8);
 }

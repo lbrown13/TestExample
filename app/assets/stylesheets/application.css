@@ -10,6 +10,8 @@
  *= require font-awesome.min
  *= require prettyPhoto
  *= require style_override.css
+ *= require users.css
+ *= require home.css
 */
 
 

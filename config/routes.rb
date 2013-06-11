@@ -1,34 +1,18 @@
 Btsclr::Application.routes.draw do
 
-
-
-
-
-
-  devise_for :users
-
-  root :to => "home#index"
-  get "home/index"
-
-  resources :reviews
-
-
-  resources :users
+    root :to => 'home#index'
+  # end
+  # devise_scope :user do
+  #   root :to => "home#index"
+  #   # match '/user/confirmation' => 'confirmations#update', :via => :put, :as => :update_user_confirmation
+  # end
+  devise_for :users, :controllers => { :registrations => "registrations", :confirmations => "confirmations" }
+  # match 'users/bulk_invite/:quantity' => 'users#bulk_invite', :via => :get, :as => :bulk_invite
+  resources :users do
+    get 'invite', :on => :member
+  end
 end
 
-#     authenticated :user do
-#     root :to => 'home#index'
-#   end
-#   devise_scope :user do
-#     root :to => "devise/registrations#new"
-#     match '/user/confirmation' => 'confirmations#update', :via => :put, :as => :update_user_confirmation
-#   end
-#   devise_for :users, :controllers => { :registrations => "registrations", :confirmations => "confirmations" }
-#   match 'users/bulk_invite/:quantity' => 'users#bulk_invite', :via => :get, :as => :bulk_invite
-#   resources :users do
-#     get 'invite', :on => :member
-#   end
-# end
 
 
   # The priority is based upon order of creation:

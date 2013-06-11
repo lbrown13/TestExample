@@ -12,14 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap
 //= require bootstrap-modal
 //= require_tree .
 $('document').ready(function() {
 
   // display validation errors for the "request invitation" form
   if ($('.alert-error').length > 0) {
-    $("#request-invite").modal('toggle');
+    $("#request-invite-a").modal('toggle');
   }
 
   // use Ajax to submit the "request invitation" form
@@ -31,10 +30,37 @@ $('document').ready(function() {
       url: "/users",
       data: dataString,
       success: function(data) {
-        $('#request-invite').html(data);
+        $('#request-invite-a').html(data);
       }
     });
     return false;
   });
 
 })
+function loadSocial() {
+
+    //Twitter
+    if (typeof (twttr) != 'undefined') {
+      twttr.widgets.load();
+    } else {
+      $.getScript('http://platform.twitter.com/widgets.js');
+    }
+
+    //Facebook
+    if (typeof (FB) != 'undefined') {
+      FB.init({ status: true, cookie: true, xfbml: true });
+    } else {
+      $.getScript("http://connect.facebook.net/en_US/all.js#xfbml=1", function () {
+        FB.init({ status: true, cookie: true, xfbml: true });
+      });
+    }
+
+    //Google+
+    if (typeof (gapi) != 'undefined') {
+      $(".g-plusone").each(function () {
+        gapi.plusone.render($(this).get(0));
+      });
+    } else {
+      $.getScript('https://apis.google.com/js/plusone.js');
+    }
+}

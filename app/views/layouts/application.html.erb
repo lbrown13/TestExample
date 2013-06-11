@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+<!--   <%= csrf_meta_tags %> -->
 
   <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
@@ -20,11 +20,15 @@
 
 <body data-spy="scroll" data-target=".scroller-spy">
   <div class="main-wrapper">
-           <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
+    <header class="headertop needhead" id="header-section">
+    <!-- START PARALLAX BG -->
+    <div class="innerbg">
 
   <%= render 'layouts/header' %>
+
   <%= yield %>
   </div>
+
+
 </body>
 </html>
