@@ -1,6 +1,8 @@
-<header class="headertop needhead" id="header-section">
-    <!-- START PARALLAX BG -->
+<!-- <header class="headertop needhead" id="header-section">
+    START PARALLAX BG
  <div class="innerbg">
+    <div class="leftbg"></div> -->
+
   <div class="hero-unit">
     <div class="container">
       <div class="row-fluid">
@@ -12,40 +14,36 @@
               </h2>
           <hr class="half">
             <div class="camein">
-              <p class="">
-
                 <a class="btn btn-large btn-block-third btn-danger" data-toggle="modal" href="#request-invite-a">Sign Up Now!</a><br>
                   <i class="or">- or -</i><br>
                 <a href="#aboutus" class="btn btn-large btn-block-third btn-warning" title="">LEARN MORE</a>
-              </p>
+
             </div>
           </div>
         </div>
       </div>
     </div>
   </div><!--/ END PARALLAX BG-->
-</header>
+
 <!-- / ###################### END MAIN HEADER ####################======================================================-->
 <!--  ==============###################### MODAL ####################======================================================== -->
 
 <div id="request-invite-a" class="modal hide fade in" style="display:">
-
-<%= simple_form_for resource, :as => resource_name, :url => registration_path(resource_name) , :html => {:class => 'form-horizontal' } do |f| %>
-    <div class="modal-header">
-      <a class="close" data-dismiss="modal">&#215;</a>
-      <h3>Sign Up for our Free Weekly Newsletter</h3>
-    </div>
-    <div class="modal-body">
-      <%= f.error_notification %>
-      <%= f.input :name, :placeholder => 'Enter Your Name' %>
-      <%= f.input :email, :placeholder => 'user@example.com' %>
-    </div>
-    <div class="modal-footer">
-      <%= f.submit "Let's Do It!", :class => "btn btn-primary", :id => 'invitation_button' %>
-      <a class="btn" data-dismiss="modal" href="">Close</a>
-    </div>
+  <%= simple_form_for resource, :as => resource_name, :url => registration_path(resource_name) , :html => {:class => 'form-horizontal' } do |f| %>
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">&#215;</a>
+    <h3>Sign Up for our Free Weekly Newsletter</h3>
+  </div>
+  <div class="modal-body">
+    <%= f.error_notification %>
+    <%= f.input :name, :placeholder => 'Enter Your Name' %>
+    <%= f.input :email, :placeholder => 'user@example.com' %>
+  </div>
+  <div class="modal-footer">
+    <%= f.submit "Let's Do It!", :class => "btn btn-primary", :id => 'invitation_button' %>
+    <a class="btn" data-dismiss="modal" href="">Close</a>
+  </div>
   <% end %>
-
 </div>
 
 <!--

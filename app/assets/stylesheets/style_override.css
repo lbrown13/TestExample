@@ -5,13 +5,24 @@
   font-weight: normal;
   font-style: normal;
 }
-body { padding-top: 60px;}
-
-.container {
-margin-right: auto;
-background-size: cover;
-margin-left: auto;
-
+body{
+  background: #f5f5f5;
+  font-family: 'Noto Sans', sans-serif;
+  /*font-family: 'Roboto', sans-serif;
+  font-family: 'Sintony', sans-serif;*/
+  font-size:16px;
+}
+/*body { padding-top: 60px;}
+*/
+.main-wrapper {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1360px;
+  min-height: 100%;
+  min-width: 100%;
+  position:relative;
+  width: 100%;
 }
 
 .navbar-inverse .nav .active > a, .navbar-inverse .nav .active > a:hover, .navbar-inverse .nav .active > a:focus {
@@ -134,10 +145,22 @@ ul#nav.nav.pull-right {
 img.innerbg {
 }
 
-#header-section .innerbg {
-  background: url(header_trial.jpg);
+/*#header-section .innerbg {
+  background: url(cover2.jpg);
   min-height:650px;
   width:100%;
+  display:inline-block;
+  margin:0px;
+  padding:0px;
+          background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+  -webkit-background-size: cover;
+  position:relative;
+  padding-bottom:50px;
+}*/
+#header-section .innerbg {
+ background: rgba(44, 62, 80, 0.8)url(cover2.jpg) 50% 0 fixed repeat;0.8  width:100%;
   display:inline-block;
   margin:0px;
   padding:0px;
@@ -150,7 +173,7 @@ img.innerbg {
 }
 
 #header-section .leftbg {
-  background: rgba(40, 170, 157, 0.0) url(pixel.png) 0% 0% repeat;
+  background: rgba(40, 170, 157, 0.4) url(pixel.png) 0% 0% repeat;
   min-height:100%;
   height:100%;
   width:100%;
@@ -161,6 +184,8 @@ img.innerbg {
   bottom:0px;
   z-index:1;
 }
+
+
 
 .hero-unit {
   background-color: transparent;
@@ -505,11 +530,12 @@ h1 {
 }
 
 .camein {
-  width: 80%;
-  min-width: 80%;
-  display: block;
-  text-align: center;
-  margin: auto;
+width: 100%;
+min-width: 100%;
+display: block;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
 }
 
 .hero-unit {
@@ -734,9 +760,12 @@ ul.social-top li a {
 -webkit-transition: all 0.3s ease-in-out;
 border-top:4px solid #2fe2bf;
 }
+
+
+
 /*======================= CSS FOR FLASH*/
 
-@media (min-width: 360px){
+/*@media (min-width: 360px){
   body{
     margin-top: 20px;
 
@@ -757,4 +786,4 @@ margin-left: 20px}
 @media (min-width: 600px) {
   img.span4.pull-left{
   margin-bottom: 60px;
-}
+}*/

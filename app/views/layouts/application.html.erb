@@ -18,24 +18,39 @@
   <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 </head>
 
-  <body class="<%= controller_name %> <%= action_name %>">
-  <div class="main-wrapper">
+<body data-spy="scroll" data-target=".scroller-spy">
+<div class="main-wrapper">
+  <div class="top-link-click right hidden-phone"></div>
+  <!-- !!HOVER EVENT TOP SCROLL-->
+  <div class="top-link right hidden-phone"></div>
+  <!-- !!HOVER EVENT TOP SCROLL-->
+  <div class="bottom-link right hidden-phone"></div>
+  <!-- !!CLICK EVENT TOP SCROLL-->
+  <div class="bottom-link-click right hidden-phone"></div>
+  <div class="top-corner"></div>
+  <div class="bottom-corner"></div>
 
+  <header class="headertop needhead" id="header-section">
+
+      <!-- START PARALLAX BG -->
+    <div class="innerbg">
+
+      <div class="leftbg"></div>
 
   <%= render 'layouts/header' %>
-    <div id="main" role="main">
-      <div class="container">
-        <div class="content">
-           <div class="row">
-            <div class="span12">
-              <%= render 'layouts/messages' %>
-              <%= yield %>
-            </div>
-          </div>
+<!--     <div id="main" role="main">-->
+  <%= render 'layouts/messages' %>
+  <%= yield %>
+
+    </div>
+  </header>
+
+
           <footer>
           </footer>
-        </div>
       </div> <!--! end of .container -->
-    </div> <!--! end of #main -->
+    </div>    <!--! end of main-wrapper -->
+
+    <!--! end of #main -->
   </body>
 </html>
