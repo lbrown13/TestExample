@@ -12,7 +12,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 2.0'
 end
 
-group :prouduction do
+group :production do
   gem 'pg'
 end
 
