@@ -8,6 +8,9 @@ source 'https://rubygems.org'
 group :development do
   gem 'sqlite3'
 end
+group :development, :test do
+  gem 'rspec-rails', '~> 2.0'
+end
 
 group :prouduction do
   gem 'pg'
@@ -39,7 +42,6 @@ gem "cucumber-rails", :group => :test, :require => false
 gem "launchy", :group => :test
 gem "capybara", :group => :test
 gem "factory_girl_rails"
-gem "rspec-rails", :group => [:development, :test]
 gem "cancan"
 gem "rolify"
 gem "simple_form"

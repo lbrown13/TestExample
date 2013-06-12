@@ -4,7 +4,7 @@ Devise.setup do |config|
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class with default "from" parameter.
-  config.mailer_sender = "please-change-me-at-config-initializers-devise@example.com"
+ config.mailer_sender = ENV["EMAIL_ADDRESS"]
 
   # Configure the class responsible to send e-mails.
   # config.mailer = "Devise::Mailer"
@@ -86,7 +86,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = "686a46f0921f3fc5dd2e9d0851bd24f0246a8d4ba756306aa0e52bbe9f24c7dce47e818b38dbda4907f77e78a1fe034c8a85d63621207524a28c4f7fe726e923"
+  # config.pepper = "457b91fb04272af0cbcb5a8ac6429929b295abad3b45a7c9c7c02ba59ddcfe7579d8c3443f846d4a0cdf014e24f8440771d590286c420e33dccecac9420e880d"
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -108,7 +108,7 @@ Devise.setup do |config|
   # initial account confirmation) to be applied. Requires additional unconfirmed_email
   # db field (see migrations). Until confirmed new email is stored in
   # unconfirmed email column, and copied to email column on successful confirmation.
-  config.reconfirmable = true
+  config.reconfirmable = false
 
   # Defines which key will be used when confirming an account
   # config.confirmation_keys = [ :email ]
@@ -214,7 +214,7 @@ Devise.setup do |config|
   # config.navigational_formats = ["*/*", :html]
 
   # The default HTTP method used to sign out a resource. Default is :delete.
-  config.sign_out_via = :delete
+  config.sign_out_via = Rails.env.test? ? :get : :delete
 
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting

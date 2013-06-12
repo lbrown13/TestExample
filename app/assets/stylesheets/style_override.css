@@ -5,6 +5,14 @@
   font-weight: normal;
   font-style: normal;
 }
+body { padding-top: 60px;}
+
+.container {
+margin-right: auto;
+background-size: cover;
+margin-left: auto;
+
+}
 
 .navbar-inverse .nav .active > a, .navbar-inverse .nav .active > a:hover, .navbar-inverse .nav .active > a:focus {
   color: #ffff00;
@@ -127,7 +135,7 @@ img.innerbg {
 }
 
 #header-section .innerbg {
-  background: url(beakers2.jpg);
+  background: url(header_trial.jpg);
   min-height:650px;
   width:100%;
   display:inline-block;
@@ -470,6 +478,13 @@ h1 {
   color: #898989;
 }
 
+.h2classes {
+  font-size: 3em;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
 .camein p {
   color: white;
   font-weight: bold;
@@ -721,7 +736,12 @@ border-top:4px solid #2fe2bf;
 }
 /*======================= CSS FOR FLASH*/
 
+@media (min-width: 360px){
+  body{
+    margin-top: 20px;
 
+  }
+}
 
 @media (max-width: 979px) {
   .camein p {
@@ -730,5 +750,11 @@ border-top:4px solid #2fe2bf;
 }
 @media (min-width: 1214px) {
   img.span4.pull-left{
-  margin-bottom: 60px;}
+  margin-bottom: 60px;
+margin-left: 20px}
+}
+
+@media (min-width: 600px) {
+  img.span4.pull-left{
+  margin-bottom: 60px;
 }

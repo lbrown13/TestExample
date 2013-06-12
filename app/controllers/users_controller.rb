@@ -1,85 +1,48 @@
 class UsersController < ApplicationController
-  # GET /users
-  # GET /users.json
-    # before_filter :authenticate_user!
+  before_filter :authenticate_user!
 
   def index
+    authorize! :index, @user, :message => 'Not authorized as an administrator.'
     @users = User.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @users }
-    end
   end
 
-  # GET /users/1
-  # GET /users/1.json
   def show
     @user = User.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @user }
-    end
   end
 
-  # GET /users/new
-  # GET /users/new.json
-  def new
-    @user = User.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @user }
-    end
-  end
-
-  # GET /users/1/edit
-  def edit
-    @user = User.find(params[:id])
-  end
-
-  # POST /users
-  # POST /users.json
-  def create
-    @user = User.new(params[:user])
-
-    respond_to do |format|
-      if @user.save
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
-        format.json { render json: @user, status: :created, location: @user }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
-  # PUT /users/1
-  # PUT /users/1.json
   def update
+    authorize! :update, @user, :message => 'Not authorized as an administrator.'
     @user = User.find(params[:id])
-
-    respond_to do |format|
-      if @user.update_attributes(params[:user])
-        format.html { redirect_to @user, notice: 'User was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
-      end
+    if @user.update_attributes(params[:user], :as => :admin)
+      redirect_to users_path, :notice => "User updated."
+    else
+      redirect_to users_path, :alert => "Unable to update user."
     end
   end
 
-  # DELETE /users/1
-  # DELETE /users/1.json
   def destroy
-    @user = User.find(params[:id])
-    @user.destroy
-
-    respond_to do |format|
-      format.html { redirect_to users_url }
-      format.json { head :no_content }
+    authorize! :destroy, @user, :message => 'Not authorized as an administrator.'
+    user = User.find(params[:id])
+    unless user == current_user
+      user.destroy
+      redirect_to users_path, :notice => "User deleted."
+    else
+      redirect_to users_path, :notice => "Can't delete yourself."
     end
+  end
+  def invite
+    authorize! :invite, @user, :message => 'Not authorized as an administrator.'
+    @user = User.find(params[:id])
+    @user.send_confirmation_instructions
+    redirect_to :back, :only_path => true, :notice => "Sent invitation to #{@user.email}."
+  end
+  def bulk_invite
+    authorize! :bulk_invite, @user, :message => 'Not authorized as an administrator.'
+    users = User.where(:confirmation_token => nil).order(:created_at).limit(params[:quantity])
+    count = users.count
+    users.each do |user|
+      user.send_confirmation_instructions
+    end
+    redirect_to :back, :only_path => true, :notice => "Sent invitation to #{count} users."
   end
 end

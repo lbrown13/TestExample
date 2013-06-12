@@ -34,47 +34,38 @@
                   <nav class="nav-collapse collapse" >
                     <ul class="nav pull-right" id="nav">
                       <li class="active"><a href="#header-section">Home</a> </li>
+                      <% if user_signed_in? %>
+                        <li>
+                          <%= link_to 'Edit account', edit_user_registration_path %>
+                        </li>
+                      <% if current_user.has_role? :admin %>
+                        <li>
+                          <%= link_to 'Admin', users_path %>
+                        </li>
+                          <% end %>
+                        <li>
+                        </li>
+                      <% end %>
+                      <% if user_signed_in? %>
+                        <li>
+                          <%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %>
+                        </li>
+                        <% else %>
+                        <li>
+                          <%= link_to 'Login', new_user_session_path %>
+                        </li>
+                      <% end %>
                       <li><a href="#aboutus">About Us</a> </li>
                       <li><a href="#price-section">Pricing</a> </li>
                       <li><a href="#team-section">Our Team</a> </li>
                       <li><a href="#contact-section">Contact</a> </li>
-
-                    </ul>
-                    <ul class="nav pull-right">
-                      <% if user_signed_in? %>
-                        <li>
-                        <%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %>
-                        </li>
-                      <% else %>
-                        <li>
-                        <%= link_to 'Login', new_user_session_path %>
-                        </li>
-                      <% end %>
-                      <% if user_signed_in? %>
-                        <li>
-                        <%= link_to 'Edit account', edit_user_registration_path %>
-                        </li>
-
-
-                        <%= link_to 'Sign up', new_user_registration_path %>
-                        </li>
-                      <% end %>
                     </ul>
                   </nav>
                 </div>
               </div>
             </div>
           </div>
-      </div>
+        </div>
 
-      <!--
 
-1) click on 'sign up now'   <how is it supposed to work>
-2) modal pops up and i enter name and email    <how is it supposed to work>
-3) thank you window comes up   <how is it supposed to work>
-
-4) when i cmd + R to refresh, user is then logged in.  <NOT HOW IT IS SUPPOSED TO WORK>
-5) if i hit 'sing up now' button, modal pops up with the entire page in it. <NOT HOW IT IS SUPPOSED TO WORK>
-6) if i hit log out, which is now visible due to the user being signed in, everything is ok.<NOT HOW IT IS SUPPOSED TO WORK>
-       -->
 

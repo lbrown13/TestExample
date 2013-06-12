@@ -1,6 +1,6 @@
 module HomeHelper
 
-
+# COMMENTEDOUT 6 11 1224pm
   def resource_name
     :user
   end
