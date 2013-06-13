@@ -1,29 +1,48 @@
-<p>Hello <%= @resource.email %>!</p>
-
-<p>Your account has been locked due to an excessive amount of unsuccessful sign in attempts.</p>
-
-<p>Click the link below to unlock your account:</p>
-
-<p><%= link_to 'Unlock my account', unlock_url(@resource, :unlock_token => @resource.unlock_token) %></p>
-
-<div id="request-invite" class="modal" style="display: 'block';">
- <div class="modal-header">
+<div id="request-invite-a" class="modal" style="display: 'block';">
+  <div class="modal-header">
     <a class="close" data-dismiss="modal">&#215;</a>
     <h3>Thank you!</h3>
   </div>
   <div class="modal-body" style="margin-bottom: 120px; overflow: visible">
-    <p>We have received your request for a  free 10 uL.</p>
-    <p>Thank you for your support</p>
-
+        <p>Thank you for signing up for HappiLabs weekly newsletter.</p>
+    <p>You will recieve a confirmation email shortly.</p>
+    <p>The HappiLabs Team</p>
     <div id="tweet" style="display:inline-block;">
       <iframe allowtransparency="true" frameborder="0" scrolling="no"
-  src="//platform.twitter.com/widgets/follow_button.html?screen_name=letubeu"
+  src="//platform.twitter.com/widgets/follow_button.html?screen_name=HappiLabs_org"
   style="width:300px; height:20px;"></iframe>
-      <a class="twitter-share-button" data-count="horizontal" data-text="A new site I've discovered" data-url="http://www.happilabs.orgm" data-via="HappiLabs" data-related="Happilbs" href="https://twitter.com/share">Tweet</a>
+      <a class="twitter-share-button" data-count="horizontal" data-text="A new site I've discovered" data-url="http://happilabs.org" data-via="HappiLabs" data-related="HappiLabs" href="https://twitter.com/share"></a>
     </div>
     <span style="display:inline-block; vertical-align:text-bottom;">
-      <div class="fb-like" data-href="http://www.haooilabs.org" data-layout="button_count" data-send="false" data-show-faces="false" data-width="90">
+      <div class="fb-like" data-href="http://railsapps.github.io/rails-prelaunch-signup/" data-layout="button_count" data-send="false" data-show-faces="false" data-width="90">
       </div>
     </span>
+    <div class="g-plusone" data-annotation="inline" data-href="http://railsapps.github.io/rails-prelaunch-signup/" data-size="medium" data-width="120">
+    </div>
   </div>
 </div>
+<!--
+<div id="request-invite-a" class="modal" style="display: 'block';">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">&#215;</a>
+    <h3>Thank you!</h3>
+  </div>
+  <div class="modal-body" style="margin-bottom: 120px; overflow: visible">
+    <p>Thank you for signing up for HappiLabs weekly newsletter.</p>
+    <p>You will recieve a confirmation email shortly.</p>
+    <p>The HappiLabs Team</p>
+    <div id="tweet" style="display:inline-block;">
+      <iframe allowtransparency="true" frameborder="0" scrolling="no"
+  src="//platform.twitter.com/widgets/follow_button.html?screen_name=HappiLabs.org"
+  style="width:300px; height:20px;"></iframe>
+      <a class="twitter-share-button" data-count="horizontal" data-text="A new site I've discovered" data-url="www.happilabs.org" data-via="HappiLabs.org" data-related="HappiLabs.org" href="https://twitter.com/share">Tweet</a>
+    </div>
+    <span style="display:inline-block; vertical-align:text-bottom;">
+      <div class="fb-like" data-href="http://railsapps.github.io/rails-prelaunch-signup/" data-layout="button_count" data-send="false" data-show-faces="false" data-width="90">
+      </div>
+    </span>
+    <div class="g-plusone" data-annotation="inline" data-href="http://railsapps.github.io/rails-prelaunch-signup/" data-size="medium" data-width="120">
+    </div>
+  </div>
+</div>
+ -->
