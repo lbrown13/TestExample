@@ -12,8 +12,9 @@ body{
   font-family: 'Sintony', sans-serif;*/
   font-size:16px;
 }
-/*body { padding-top: 60px;}
-*/
+body { padding-top: 60px;
+  padding-left: 15px;}
+
 .main-wrapper {
   height: 100%;
   margin-left: auto;
@@ -173,7 +174,6 @@ img.innerbg {
 }
 
 #header-section .leftbg {
-  background: rgba(40, 170, 157, 0.4) url(pixel.png) 0% 0% repeat;
   min-height:100%;
   height:100%;
   width:100%;
@@ -185,6 +185,13 @@ img.innerbg {
   z-index:1;
 }
 
+.important {
+background-color: #ffff00;
+border-radius: 4px;
+font-weight: 500;
+letter-spacing: 1px;
+padding: 0px 3px 0px 3px;
+}
 
 
 .hero-unit {
@@ -194,7 +201,37 @@ img.innerbg {
 }
 
 .sky-background {
-background-color: #dfeff8;
+  background-color: #CEF3FF;
+}
+
+.sky-background h2 {
+  color: #898989;
+  font-size: 48px;
+  line-height: 60px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-family: "open sans", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  }
+
+/*.price-box {
+height: 600px;
+}*/
+
+.sky-background ul {
+  margin-bottom: 30px;
+}
+
+#price-section h2 {
+padding: 80px 0px 0px 0px;
+font-size: 42px;
+}
+
+.sky-background li {
+  line-height: 30px;
+  list-style: none;
 }
 
 .feature-box ul li{
@@ -202,6 +239,21 @@ background-color: #dfeff8;
   text-align: left;
   font-size: 12px;
 }
+
+.pricing-table-features p {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    text-align: left;
+    margin: 10px;
+  }
+
+  .pricing-table p{
+    padding:0px;
+    margin-top:5px;
+    font-size:90%;
+  }
+
 
 .feature-box {
   background-color: #cdd2d9;
@@ -211,6 +263,34 @@ background-color: #dfeff8;
  text-align: center;
 }
 
+.box, .feature-box{
+  margin-bottom:30px;
+
+}
+
+.features-more {
+  border-top: 14px solid #ddd;
+  padding: 40px 0px;
+}
+
+.features-more{
+  background: none;
+
+}
+
+.features-more:nth-child(even){
+  background: none;
+
+}
+.features-more:nth-child(odd).span6{
+  background: none;
+
+
+}
+
+.features-more:nth-child(odd) h3{
+  text-align:left;
+}
 .span4 {
   width: 30%;
 }
@@ -239,15 +319,42 @@ border: 0px;
 }
 
 .green .pricing-table-header .price-header {
-  background: #34495E;
+  background: #898989;
 }
 
-.dark-green .pricing-table-header .price-header {
-  background: green;
-}
 
 .red .pricing-table-header .price-header {
   background: #00b0f0;
+}
+
+ .pricing-table-header .price-header{
+
+  background-size: 16px 16px;
+  border-radius: 6px 6px 0 0;
+  color: #fff;
+  padding: 19px 0px 20px;
+  width:100%;
+  display:inline-block;
+  font-size: 18px;
+  font-weight: 550;
+
+}
+
+.gray .pricing-table-header .price-header {
+  background: #898989;
+}
+
+.pricing-table-features, .pricing-table-header .price-value{
+  padding:20px;
+}
+.feature-box.price-feature-box {
+  padding:0px;
+  /*border: 2px solid #898989;*/
+  position: relative;
+}
+
+.pricing-table-sign-up{
+  padding:20px;
 }
 
 .modal-header {
@@ -262,6 +369,16 @@ border: 0px;
   opacity: .2;
 }
 
+#price-section h2 {
+padding: 80px 0px 0px 0px;
+font-size: 48px;}
+
+h2 {
+  font-size: 48px;
+  text-align: center;
+font-weight: 800;
+color: #23adf5;
+}
 
 .hero-unit h1,
 .hero-unit h2 {
@@ -300,6 +417,19 @@ a.btn.btn-large.btn-block-third.btn-warning {
   background: #34495E;
 }
 
+.btn-why {
+  max-width: 80%;
+box-shadow: 2px 2px 2px #898989;
+}
+
+.btn.btn-danger {
+  background-color: #FFFF00;
+  box-shadow: 2px 2px 8px #898989;
+}
+
+.btn-inverse {
+background-color: #354960;
+}
 /*====================   FORM   ================
 ======================   FORM   ================*/
 
@@ -482,7 +612,48 @@ input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #999999;
 }
+.feature-box {
+  background-color: #FFF;
+  border-radius: 9px;
+  padding: 14px;
+  position: relative;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow:    0px 0px 10px rgba(50, 50, 50, 0.5);
+  box-shadow:         0px 0px 10px rgba(50, 50, 50, 0.5);
+  }
 
+  .feature-box.feature-box-hot:before {
+    background: url("../../images/feature-box/ribbon.png") 0 0 no-repeat;
+    background-size: 82px 82px;
+    content: "";
+    height: 82px;
+    position: absolute;
+    right: -4px;
+    top: -4px;
+    width: 82px; }
+
+p .pricing-table{
+    font-size: 15px;
+    margin-bottom: 33px; }
+
+.feature-box-image {
+  height: 170px;
+  margin: 31px 0 27px;
+  vertical-align: bottom; }
+  .feature-box-image.big-illustration {
+    height: 111px;
+    margin-top: 20px;
+    width: 150px; }
+
+.feature-box-title {
+  font-size: 20px;
+  margin: 0; }
+
+  .box, .feature-box{
+    margin-bottom:30px;
+
+  }
 /*====================   TOMS CSS   ================
 ======================              ================
 */
@@ -545,20 +716,25 @@ margin-right: auto;
   color: inherit;
 }
 
-.about-us {
-  margin: 0 auto;
-  /*    width: 1100px;*/
-  /*height: 300px;*/
-  /*margin-top: 20px;*/
+  .about-us {
+    width: 1100px;
+    margin: 0 auto;
+    /*height: 300px;*/
+    /*margin-top: 20px;*/
+    border-bottom: 3px solid #898989;
+    padding-bottom: 100px;
+    padding-top: 50px;
   }
 
+
 .tom-image {
-  float: left;
-  height: 80%;
+  height: 300px;
+  width: 300px;
   width: 30%;
   padding: 10px 0px 0px 10px;
   margin: 10px 20px 0px 10px;
 }
+
 
 .text-right-img {
   float: left;
@@ -568,7 +744,16 @@ margin-right: auto;
   font-size: 20px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+.text-left-img {
+  float: right;
+  width:600px;
+  padding-left: 20px;
+  margin-left: 50px;
+  line-height: 32px;
+  font-size: 20px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
+}
 
 .why-img {
   height: 154px;
@@ -591,11 +776,18 @@ margin-right: auto;
   left: 312px;
 }
 
-.about-us h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #00AEEF;
-}
+  .about-us h2 {
+    color: #00AEEF;
+    font-size: 48px;
+    line-height: 60px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-family: "open sans", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
 .about-us h4 {
   font-size: 14px;
@@ -623,10 +815,7 @@ margin-right: auto;
   font-weight: 700;
 }
 
-.content{
-background-color: rgba(224, 224, 224, 0.8);
 
-}
 
 .page-header h3{
 font-size: 60px;
@@ -646,13 +835,11 @@ border-top: 14px solid #3f95e1;
   background-image: url(../../assets/img/paper.png);
 }
 
-/*.why-box {
+.why-box {
   padding: 10px;
+  height: 470px;
 }
-*/
-.about-us h2{
-  color: #2b3e50;
-}
+
 group:after {
     content: "";
     display: table;
@@ -711,6 +898,11 @@ ul.social-top li {
 .thumbnail:hover ul.social-top li a{
   color:#fff;
 }
+
+/*.thumbnail.span4 {
+  max-height: 440px;
+  min-height: 300px;
+}*/
 
 footer ul.social-top li {
   background: #16a085;
